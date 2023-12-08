@@ -24,7 +24,8 @@ services:
     - dockercoins
     ports:
     - "8000:80"
-
+    volumes:
+     - "./webui/files/index.html:/files/index.html"
 
 
   redis:
