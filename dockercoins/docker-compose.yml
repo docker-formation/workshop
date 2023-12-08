@@ -14,7 +14,6 @@ services:
     - dockercoins
     ports:
     - "8002:80"
-    - "9999:9999"
 
   webui:
     #image: training/dockercoins-webui:1.0
@@ -25,6 +24,8 @@ services:
     - dockercoins
     ports:
     - "8000:80"
+
+
 
   redis:
     image: redis
